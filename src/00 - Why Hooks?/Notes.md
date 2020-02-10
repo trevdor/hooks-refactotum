@@ -15,7 +15,8 @@
 
   <details>
     <summary>Class Component</summary>
-    ```jsx
+
+    ```js
     class Posts extends React.Component {
       state = { posts: null }
       subscribe() {
@@ -48,6 +49,7 @@
 
   <details>
     <summary>Function Component</summary>
+    
     ```js
     const [posts, setPosts] = useState(null)
     useEffect(() => subscribeToPosts(uid, setPosts), [uid])
