@@ -11,6 +11,17 @@
 - Class components conflate state and time
 - Class instance variables are mutable
 - Functions capture props and state
+
+  - Dan Abramov:
+
+    > Every function inside the component render (including event handlers, effects, timeouts or API calls inside them) captures the props and state of the render call that defined it.
+
+  - Also Dan Abramov:
+
+    > Kingdoms will rise and turn into ashes, the Sun will shed its outer layers to be a white dwarf, and the last civilization will end. But nothing will make the props “seen” [in a given render], change...
+
+    > That’s what allows React to deal with effects right after painting — and make your apps faster by default. The old props are still there if our code needs them.
+
 - Functions help you think “given these inputs, what output should I produce?”
 
 # Why Hooks?

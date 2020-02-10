@@ -13,7 +13,9 @@ export default class TweetLength extends React.Component {
   }
 
   componentDidUpdate() {
-    document.title = this.state.text;
+    document.title = `New Tweet${
+      this.state.text ? `: ${this.state.text}` : ""
+    }`;
   }
 
   componentWillUnmount() {
@@ -28,9 +30,14 @@ export default class TweetLength extends React.Component {
 
   render() {
     return (
-      <div className="newPostForm">
-        <textarea rows="5" cols="50" onChange={this.updateText}>
-          What's on your mind?
+      <div className="newTweetForm">
+        <textarea
+          rows="5"
+          cols="50"
+          onChange={this.updateText}
+          placeholder={"What's on your mind?"}
+        >
+          {this.state.text}
         </textarea>
         <span>
           {this.state.text.length} / {CHAR_LIMIT}

@@ -20,6 +20,7 @@ export default class Minutes extends React.Component {
   render() {
     return (
       <div>
+        <h1 className="Title">How Long Was Your Workout?</h1>
         <div className="Minutes">
           <button
             onClick={this.subtract}

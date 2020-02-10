@@ -7,7 +7,7 @@ export default function TweetLength() {
   const [text, setText] = useState("");
 
   useEffect(() => {
-    document.title = text || "New Tweet";
+    document.title = `New Tweet${text ? `: ${text}` : ""}`;
 
     return () => {
       document.title = "Boring title";
@@ -15,9 +15,14 @@ export default function TweetLength() {
   }, [text]);
 
   return (
-    <div className="newPostForm">
-      <textarea rows="5" cols="50" onChange={e => setText(e.target.value)}>
-        What's on your mind?
+    <div className="newTweetForm">
+      <textarea
+        rows="5"
+        cols="50"
+        onChange={e => setText(e.target.value)}
+        placeholder={"What's on your mind?"}
+      >
+        {text}
       </textarea>
       <span>
         {text.length} / {CHAR_LIMIT}

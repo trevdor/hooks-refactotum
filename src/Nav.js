@@ -15,6 +15,9 @@ export default function Nav() {
       <Link to="/listener" className="navLink">
         listener
       </Link>
+      <Link to="/useReducer" className="navLink">
+        useReducer
+      </Link>
     </nav>
   );
 }

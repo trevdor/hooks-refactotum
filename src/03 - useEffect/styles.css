@@ -9,22 +9,22 @@
   justify-content: center;
 }
 
-.newPostForm {
+.newTweetForm {
   display: flex;
   flex-direction: column;
 }
 
-.newPostForm textarea {
+.newTweetForm textarea {
   font-size: 1.5rem;
   padding: 0.5rem;
 }
 
-.newPostForm span {
+.newTweetForm span {
   align-self: flex-end;
   font-size: 1.25rem;
 }
 
-.newPostForm button {
+.newTweetForm button {
   background-color: #a64b29;
   border-radius: 0.3rem;
   color: white;
