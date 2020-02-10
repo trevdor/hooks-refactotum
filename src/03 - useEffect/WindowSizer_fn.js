@@ -3,10 +3,7 @@ import React, { useLayoutEffect, useState } from "react";
 import "./styles.css";
 
 export default function WindowSizer() {
-  const [size, setSize] = useState({
-    height: 0,
-    width: 0
-  });
+  const [size, setSize] = useState({ height: 0, width: 0 });
 
   useLayoutEffect(() => {
     function updateSize() {
