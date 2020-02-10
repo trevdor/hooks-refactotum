@@ -19,6 +19,18 @@
   - `useLayoutEffect`
   - `useDebugValue`
 
+# Rules of Hooks
+
+- See https://reactjs.org/docs/hooks-rules.html
+- Only Call Hooks at the Top Level
+  - Don’t call Hooks inside loops, conditions, or nested functions.
+- Only Call Hooks from React Functions
+  - Don’t call Hooks from regular JavaScript functions. Instead, you can:
+    - ✅ Call Hooks from React function components.
+    - ✅ Call Hooks from custom Hooks
+
+- Lint rule is super important if we want our hooks to be durable and bug-free
+
 # De-mystifying Hooks
 
 - Ryan Florence "phony hooks"
