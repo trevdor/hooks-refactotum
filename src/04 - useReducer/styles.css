@@ -1,11 +1,13 @@
 .Minutes {
   flex: 1;
   justify-content: center;
+  user-select: none;
 }
 
 .Error,
 .Title {
   text-align: center;
+  user-select: none;
 }
 
 .Error {
