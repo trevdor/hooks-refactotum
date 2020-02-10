@@ -1,6 +1,6 @@
-import "./styles.css";
 import React, { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import "./styles.css";
 
 export default function Minutes() {
   const [minutes, setMinutes] = useState(5);

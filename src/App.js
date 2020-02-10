@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Nav from "./Nav";
-import Minutes from "./useState/Minutes_class";
+import Minutes from "./02 - useState/Minutes_class";
 // import Minutes from "./useState/Minutes_fn";
 
 import "./App.css";

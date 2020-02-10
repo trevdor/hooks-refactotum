@@ -7,12 +7,12 @@ export default class Minutes extends React.Component {
     minutes: 5
   };
 
-  handleAdd = () =>
+  add = () =>
     this.setState(prevState => ({
       minutes: prevState.minutes + 1
     }));
 
-  handleSubtract = () =>
+  subtract = () =>
     this.setState(prevState => ({
       minutes: prevState.minutes - 1
     }));
@@ -22,7 +22,7 @@ export default class Minutes extends React.Component {
       <div>
         <div className="Minutes">
           <button
-            onClick={this.handleSubtract}
+            onClick={this.subtract}
             type="button"
             className="icon_button Minutes_button"
           >
@@ -32,7 +32,7 @@ export default class Minutes extends React.Component {
             {this.state.minutes} Minutes
           </div>
           <button
-            onClick={this.handleAdd}
+            onClick={this.add}
             type="button"
             className="icon_button Minutes_button"
           >
