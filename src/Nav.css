@@ -1,6 +1,6 @@
 .navbar {
   align-items: center;
-  background-color: #a64b29;
+  background-color: #5176a6;
   border-radius: 8px;
   display: flex;
   font-weight: 700;
@@ -10,5 +10,6 @@
 .navLink {
   color: white;
   flex: 1 auto;
+  text-align: center;
   padding: 0 2rem;
 }

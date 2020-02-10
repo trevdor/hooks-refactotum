@@ -9,6 +9,12 @@ export default function Nav() {
       <Link to="/useState" className="navLink">
         useState
       </Link>
+      <Link to="/useEffect" className="navLink">
+        useEffect
+      </Link>
+      <Link to="/listener" className="navLink">
+        listener
+      </Link>
     </nav>
   );
 }

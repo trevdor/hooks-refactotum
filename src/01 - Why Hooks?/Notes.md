@@ -28,4 +28,5 @@
 
 # Super nerdy extra
 
-- [Why is React Doing This? (hooks)](https://gist.github.com/sebmarkbage/a5ef436427437a98408672108df01919)
+- Seb Markbage gist: [Why is React Doing This? (hooks)](https://gist.github.com/sebmarkbage/a5ef436427437a98408672108df01919)
+  - Features Rich Harris arguing the Svelte approach
