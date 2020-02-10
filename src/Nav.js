@@ -10,13 +10,19 @@ export default function Nav() {
         useState
       </Link>
       <Link to="/useEffect" className="navLink">
-        useEffect
+        useEffect (imperative)
       </Link>
       <Link to="/listener" className="navLink">
-        listener
+        useEffect (listener)
       </Link>
       <Link to="/useReducer" className="navLink">
         useReducer
+      </Link>
+      <Link to="/useRefI" className="navLink">
+        useRef (DOM)
+      </Link>
+      <Link to="/useRefII" className="navLink">
+        useRef (arbitrary)
       </Link>
     </nav>
   );

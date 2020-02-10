@@ -8,6 +8,8 @@ import TweetLength from "./03 - useEffect/TweetLength_class";
 import WindowSizer from "./03 - useEffect/WindowSizer_class";
 // import WindowSizer from "./03 - useEffect/WindowSizer_fn-done";
 import ReducerMinutes from "./04 - useReducer/Minutes_fn-done";
+import TweetLengthRef from "./08 - useRef/TweetLength_fn-done";
+import MinutesIntervalRef from "./08 - useRef/Minutes_fn-done.js";
 
 import "./App.css";
 
@@ -26,8 +28,14 @@ function App() {
           <Route path="/listener">
             <WindowSizer />
           </Route>
-          <Route path="/usereducer">
+          <Route path="/useReducer">
             <ReducerMinutes />
+          </Route>
+          <Route path="/useRefI">
+            <TweetLengthRef />
+          </Route>
+          <Route path="/useRefII">
+            <MinutesIntervalRef />
           </Route>
         </div>
       </div>

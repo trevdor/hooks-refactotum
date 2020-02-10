@@ -31,6 +31,7 @@ export default class TweetLength extends React.Component {
   render() {
     return (
       <div className="newTweetForm">
+        <h1>Tweeter</h1>
         <textarea
           rows="5"
           cols="50"

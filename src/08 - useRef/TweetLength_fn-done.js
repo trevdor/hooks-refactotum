@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import "./styles.css";
+import React, { useEffect, useRef, useState } from "react";
+import "./Tweet.css";
 
 const CHAR_LIMIT = 140;
 
@@ -14,6 +14,13 @@ export default function TweetLength() {
     };
   }, [text]);
 
+  /* useRef to hold onto a reference to the DOM for imperative work*/
+  const textareaRef = useRef(null);
+
+  useEffect(() => {
+    textareaRef.current.focus();
+  }, []);
+
   return (
     <div className="newTweetForm">
       <h1>Tweeter</h1>
@@ -22,9 +29,11 @@ export default function TweetLength() {
         cols="50"
         onChange={e => setText(e.target.value)}
         placeholder={"What's on your mind?"}
+        ref={textareaRef}
       >
         {text}
       </textarea>
+
       <span>
         {text.length} / {CHAR_LIMIT}
       </span>
